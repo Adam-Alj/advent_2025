@@ -18,6 +18,7 @@ function quantumBeamPath(grid: string[][]): number {
         if (rowIndex == grid.length - 1) {
             return 1;
         }
+
         if (memoMap[memoHash(rowIndex, beamIndex)]) {
             return memoMap[memoHash(rowIndex, beamIndex)];
         }
